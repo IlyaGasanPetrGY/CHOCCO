@@ -1,0 +1,127 @@
+.section {
+  height: 100vh;
+  min-height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  position: relative;
+  background: url("./../png/listsecondsec.png") left 0 center no-repeat;
+}
+.section::before {
+  content: url("./../png/malin.png");
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+}
+
+.containers {
+  width: 940px;
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.section__title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.headline {
+  margin-bottom: 40px;
+}
+
+.headline__title {
+  margin-bottom: 25px;
+}
+
+.headline__subtitle {
+  padding: 0 15%;
+  text-align: center;
+}
+
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.benefit__item {
+  text-align: center;
+}
+
+.benefits__image--wrapper {
+  display: inline-block;
+  width: 126px;
+  height: 126px;
+  position: relative;
+  border-radius: 50%;
+  background: #F2F5F4;
+}
+
+.benefit {
+  text-align: center;
+  position: relative;
+}
+
+.benefit__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 3%;
+}
+.benefit__item:before {
+  content: url("./../png/shape.png");
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+}
+
+.benefit__item:last-child {
+  padding-right: 0;
+}
+.benefit__item:last-child::before {
+  display: none;
+}
+
+.benefit__item:first-child {
+  padding-left: 0;
+}
+
+.benefit__icon {
+  width: 75px;
+  height: 69px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.benefit__title {
+  font-weight: bold;
+  font-size: 25px;
+}
