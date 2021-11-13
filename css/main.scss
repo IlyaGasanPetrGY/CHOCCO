@@ -1,3 +1,4 @@
+
 .herro__main-title {
     font-size: 48px;
     line-height: 1.1;
@@ -15,6 +16,22 @@
     border-radius: 50px;
     font-weight: bold;
     text-transform: uppercase;
+    border: none;
+    &--theme--green {
+        background: #2E4E3F;
+        color: #fff;
+        &:hover {
+            background: #fff;
+            color: #2E4E3F;
+        }
+    }
+    &--theme--transparent {
+        background: transparent;
+        color: #000;
+        &:hover {
+            color: #2E4E3F;
+        }
+    }
 }
 .btn--white {
     

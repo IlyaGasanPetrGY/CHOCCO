@@ -17,6 +17,22 @@
   border-radius: 50px;
   font-weight: bold;
   text-transform: uppercase;
+  border: none;
+}
+.btn--theme--green {
+  background: #2E4E3F;
+  color: #fff;
+}
+.btn--theme--green:hover {
+  background: #fff;
+  color: #2E4E3F;
+}
+.btn--theme--transparent {
+  background: transparent;
+  color: #000;
+}
+.btn--theme--transparent:hover {
+  color: #2E4E3F;
 }
 
 .btn--white {

@@ -5,6 +5,8 @@
 @import url(./features.css);
 @import url(./section.css);
 @import url(./reviews.css);
+@import url(./deliv.css);
+@import url(./fixedmenu.css);
 
 $container-width: 940px;
 $base-font-size: 18px;
@@ -16,6 +18,25 @@ body {
     color: #000;
 }
 body {
+    /**
+             * Для эксплорера
+             */
+             -ms-user-select: none;
+
+             /**
+              * Для мозилы
+              */
+             -moz-user-select: none;
+ 
+             /**
+              * Для конкверора
+              */
+             -khtml-user-select: none;
+ 
+             /**
+              * Для Сафари и Хрома
+              */
+             -webkit-user-select: none;
     font-size: $base-font-size;
     font-family: 'Alegreya Sans', sans-serif;
     line-height: 1.42;
