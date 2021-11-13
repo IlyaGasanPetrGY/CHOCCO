@@ -8,17 +8,17 @@
 }
 
 .fixed-menu__item {
-  margin-bottom: 20px;
+  margin-bottom: 1.1rem;
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #fff;
 }
 
 .fixed-menu__link {
-  width: 16px;
-  height: 15px;
+  width: 0.9rem;
+  height: 0.83rem;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 0.05rem solid transparent;
   display: block;
   position: relative;
 }

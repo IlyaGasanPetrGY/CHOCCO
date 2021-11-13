@@ -1,8 +1,4 @@
-$container-width: 940px;
-$base-font-size: 18px;
-@function rem($px) {
-    @return $px / $base-font-size + 0rem;
-}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -14,16 +10,19 @@ $base-font-size: 18px;
     align-items: center;
 }
 .menu__item {
-    margin-right: 15px;
+    margin-right: 0.83rem;
     &:last-child {
         margin-right: 0;
     }
 }
 .menu__link {
     text-decoration: none;
+    &:hover {
+        color: #365A49;
+    }
 }
 .phone__number {
-    font-size: 24px;
+    font-size: 1.3rem;
     text-decoration: none;
 }
 .phone__number {
@@ -31,6 +30,6 @@ $base-font-size: 18px;
     align-items: center;
 }
 .phone-number__icon {
-    width: 16px;
-    height: 16px;
+    width: 0.9rem;
+    height: 0.9rem;
 }

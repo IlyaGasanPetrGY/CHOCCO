@@ -3,21 +3,16 @@
 }
 .features__item {
     display: flex;
-    margin-right: 46px;
+    margin-right: 2.5rem;
     &:last-child{
         margin-right: 0;
     }
 }
 .feature__icon {
-    width: 45px;
-    margin-right: 7px;
+    width: 2.5rem;
+    margin-right:0.4rem;
 }
 .feature__text {
-    font-style: 16px;
-    max-width: 85px;
-}
-$container-width: 940px;
-$base-font-size: 18px;
-@function rem($px) {
-    @return $px / $base-font-size + 0rem;
+    font-size: 0.9rem;
+    max-width: 4.7rem;
 }

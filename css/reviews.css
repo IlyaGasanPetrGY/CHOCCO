@@ -5,21 +5,21 @@
 .section__message::after {
   content: url("./../png/baris.png");
   position: absolute;
-  bottom: -100px;
+  bottom: -5.6rem;
   left: 0;
   z-index: 2;
 }
 .section__message::before {
   content: url("./../png/listsecondsec.png");
   position: absolute;
-  bottom: -200px;
+  bottom: -11.1;
   left: 0;
   z-index: 2;
 }
 
 .reviews__display {
-  padding: 50px 45px 45px;
-  margin-bottom: 20px;
+  padding: 2.78rem 2.5rem 2.5rem;
+  margin-bottom: 1.1rem;
   background: url("./../png/tree.png") right center no-repeat;
   background-color: #F8FAF9;
   position: relative;
@@ -28,8 +28,8 @@
 .reviews__display::before {
   content: "";
   display: block;
-  width: 90px;
-  height: 90px;
+  width: 5rem;
+  height: 5rem;
   background: #fff;
   border-radius: 50%;
   position: absolute;
@@ -46,9 +46,9 @@
 }
 
 .reviews__avatar {
-  height: 260px;
-  width: 254px;
-  margin-right: 40px;
+  height: 14.4rem;
+  width: 14.1rem;
+  margin-right: 2.22rem;
 }
 
 .reviews__avatar-img {
@@ -66,7 +66,7 @@
 
 .reviews__title {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.4rem;
 }
 
 .rewiews__aouther {
@@ -83,11 +83,11 @@
 }
 
 .rewiews__swichers__item {
-  width: 74px;
-  height: 74px;
+  width: 4.1rem;
+  height: 4.1rem;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 20px;
+  margin-right: 1.1rem;
 }
 
 .rewiews__swichers__item:last-child {
@@ -95,5 +95,5 @@
 }
 
 .rewiews__swichers__item--active {
-  border: 4px solid #365A49;
+  border: 0.22rem solid #365A49;
 }

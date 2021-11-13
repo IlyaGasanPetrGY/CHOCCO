@@ -1,15 +1,16 @@
 @import url(media.css);
 $blue : #61C4D9;
 
-$container-width: 940px;
-$base-font-size: 18px;
+$container-width: 52rem;
+$base-font-size: 1rem;
 @function rem($px) {
     @return $px / $base-font-size + 0rem;
 }
 body {
     width: 100vw;
     height: 100vh;
-    min-width: rem(650px);
+    min-width: 36rem;
+    font-size: 18px;
 }
 .hero {
     height:100%;
@@ -23,7 +24,7 @@ body {
     &::before{
         content: url("./../png/listleft.png");
         position: absolute;
-        bottom: -50px;
+        bottom: -2.7rem;
         left: 10%;
     }
     
@@ -31,13 +32,13 @@ body {
         content: url("./../png/comp.png");
 
         position: absolute;
-        bottom: -50px;
+        bottom: -2.7rem;
         right: 3%;
     }
 }
 .container {
-    padding-top: 25px;
-    padding-bottom: 40px;
+    padding-top: 1.4rem;
+    padding-bottom: 2.22rem;
     
 }
 .container:nth-child(1) {
