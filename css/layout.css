@@ -8,6 +8,7 @@
 @import url(./reviews.css);
 @import url(./deliv.css);
 @import url(./fixedmenu.css);
+@import url(./media.css);
 html,
 body {
   width: 100%;
@@ -43,12 +44,12 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
   height: 100%;
 }
 
 .container {
-  width: 940px;
+  width: 95%;
+  max-width: 940px;
   margin: 0 auto;
   height: 100%;
   display: -webkit-box;

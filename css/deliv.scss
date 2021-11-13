@@ -105,3 +105,8 @@
 .radio__visable--checbox {
     border-radius: 0px;
 }
+$container-width: 940px;
+$base-font-size: 18px;
+@function rem($px) {
+    @return $px / $base-font-size + 0rem;
+}

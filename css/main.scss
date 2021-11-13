@@ -1,4 +1,8 @@
-
+$container-width: 940px;
+$base-font-size: 18px;
+@function rem($px) {
+    @return $px / $base-font-size + 0rem;
+}
 .herro__main-title {
     font-size: 48px;
     line-height: 1.1;

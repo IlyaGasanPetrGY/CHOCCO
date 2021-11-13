@@ -1,3 +1,8 @@
+$container-width: 940px;
+$base-font-size: 18px;
+@function rem($px) {
+    @return $px / $base-font-size + 0rem;
+}
 .header {
     display: flex;
     justify-content: space-between;

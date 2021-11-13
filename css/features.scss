@@ -16,3 +16,8 @@
     font-style: 16px;
     max-width: 85px;
 }
+$container-width: 940px;
+$base-font-size: 18px;
+@function rem($px) {
+    @return $px / $base-font-size + 0rem;
+}

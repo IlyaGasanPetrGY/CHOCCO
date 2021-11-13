@@ -1,9 +1,15 @@
-
+@import url(media.css);
 $blue : #61C4D9;
+
+$container-width: 940px;
+$base-font-size: 18px;
+@function rem($px) {
+    @return $px / $base-font-size + 0rem;
+}
 body {
     width: 100vw;
     height: 100vh;
-    min-width: 650px;
+    min-width: rem(650px);
 }
 .hero {
     height:100%;

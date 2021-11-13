@@ -7,9 +7,13 @@
 @import url(./reviews.css);
 @import url(./deliv.css);
 @import url(./fixedmenu.css);
+@import url(./media.css);
 
 $container-width: 940px;
 $base-font-size: 18px;
+@function rem($px) {
+    @return $px / $base-font-size + 0rem;
+}
 
 html,
 body {
@@ -47,14 +51,14 @@ body {
 .wrapper {
     position: relative;
     width: 100%;
-    min-width: $container-width+20px;
     height: 100%;
     //overflow: hidden;
 
 }
 
 .container {
-    width: $container-width;
+    width: 95%;
+    max-width: $container-width;
     margin: 0 auto;
     height: 100%;
     display: flex;
