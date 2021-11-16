@@ -1,9 +1,28 @@
+$tablets: 768px;
+$phones: 480px;
+
+@mixin tablets {
+    @media screen and (max-width: $tablets){
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: $phones){
+        @content;
+    }
+}
+
+
 .fixed__menu {
     position: fixed;
     top: 50%;
     right: 3%;
     transform: translate(0,-50%);
     z-index: 1000000;
+    @include tablets() {
+        display: none;
+    }
 }
 .fixed-menu__item {
     margin-bottom: 1.1rem;

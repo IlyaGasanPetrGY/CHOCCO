@@ -6,6 +6,11 @@
           transform: translate(0, -50%);
   z-index: 1000000;
 }
+@media screen and (max-width: 768px) {
+  .fixed__menu {
+    display: none;
+  }
+}
 
 .fixed-menu__item {
   margin-bottom: 1.1rem;

@@ -38,17 +38,62 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 768px) {
+  .reviews__display::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .reviews__display {
+    padding: 0;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background: url("./../png/tree.png") right top no-repeat;
+    background-color: #F8FAF9;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__display {
+    padding: 0;
+  }
+}
 
 .reviews__display-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .reviews__display-inner {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__display-inner {
+    padding: 1rem;
+  }
+}
 
 .reviews__avatar {
   height: 14.4rem;
   width: 14.1rem;
   margin-right: 2.22rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__avatar {
+    margin-right: 0;
+  }
 }
 
 .reviews__avatar-img {

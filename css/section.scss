@@ -1,4 +1,22 @@
-$container-width: 940px;
+$container-width: 47rem;
+$tablets: 768px;
+$phones: 480px;
+
+@mixin tablets {
+    @media screen and (max-width: $tablets){
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: $phones){
+        @content;
+    }
+}
+
+
+
+
 .section {
     height: 100vh;
     min-height: 30rem;
@@ -6,18 +24,25 @@ $container-width: 940px;
     flex-direction: column;
     justify-content: center;
     padding-top: 1.4rem;
-    padding-bottom: 2,22rem;
+    padding-bottom: 2.22rem;
     position: relative;
     background: url("./../png/listsecondsec.png") left 0 center no-repeat;
+    @include phones {
+        background: none;
+      }
     &::before{
         content: url("./../png/malin.png");
         position: absolute;
-        bottom: -100px;
+        bottom: -5rem;
         left: 0;
+        @include phones {
+          display: none;
+        }
     }
+
 }
 .containers {
-    width: $container-width;
+    max-width: $container-width;
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -42,10 +67,15 @@ $container-width: 940px;
 .headline__subtitle {
     padding: 0 15%    ;
     text-align: center;
+    font-size: 0.9rem;
+    @include phones {
+        padding: 0 2%;
+    }
 }
 
 .benefits {
     display: flex;
+    padding: 0 2%;
 }
 .benefit__item {
     text-align: center;
@@ -58,9 +88,13 @@ $container-width: 940px;
     border-radius: 50%;
     background: #F2F5F4;
 }
-.benefit {
+.benefits {
     text-align: center;
     position: relative;
+    @include phones {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 .benefit__item {
@@ -72,6 +106,16 @@ $container-width: 940px;
         top: 2.8rem;
         right: 0px;
         transform: translate(50%);
+        @include phones {
+            display: none;
+        }
+    }
+    @include phones {
+        display: flex;
+        width: 100%;
+        text-align: start;
+        padding: 0;
+
     }
     
 }
@@ -95,4 +139,7 @@ $container-width: 940px;
 .benefit__title {
     font-weight: bold;
     font-size: 1.4rem;
+}
+.benefit__desc {
+    font-size: 0.8rem;
 }

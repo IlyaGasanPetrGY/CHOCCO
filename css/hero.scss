@@ -1,31 +1,42 @@
 @import url(media.css);
 $blue : #61C4D9;
+@import url(./media.css);
 
 $container-width: 52rem;
 $base-font-size: 1rem;
-@function rem($px) {
-    @return $px / $base-font-size + 0rem;
+
+$tablets: 768px;
+$phones: 480px;
+
+@mixin tablets {
+    @media screen and (max-width: $tablets){
+        @content;
+    }
 }
-body {
-    width: 100vw;
-    height: 100vh;
-    min-width: 36rem;
-    font-size: 18px;
+
+@mixin phones {
+    @media screen and (max-width: $phones){
+        @content;
+    }
 }
+
 .hero {
-    height:100%;
+    height: 100vh;
     color: #fff;
     background: url(./../png/list.png) bottom right no-repeat;
     background-color: $blue;
 }
 .hero__container {
-    height: 100%;
+    height: 100vh;
     position: relative;
     &::before{
         content: url("./../png/listleft.png");
         position: absolute;
         bottom: -2.7rem;
         left: 10%;
+        @include tablets {
+            display: none;
+        }
     }
     
     &::after {
@@ -34,6 +45,9 @@ body {
         position: absolute;
         bottom: -2.7rem;
         right: 3%;
+        @include tablets {
+            display: none;
+        }
     }
 }
 .container {
@@ -44,6 +58,9 @@ body {
 .container:nth-child(1) {
 
     background: url(./../png/chocolate.png) center right / 50% auto no-repeat; 
+    @include tablets {
+        background: none;
+    }
 }
 .maincontent {
     height: 100%;
@@ -51,4 +68,19 @@ body {
 }
 .herro__title-section {
     width: 46%;
+    @include tablets {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &:before {
+            content: url("./../png/mobchoc.png");
+            object-fit: 50%;
+
+        }
+        flex: 1;
+    }
 }

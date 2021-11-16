@@ -1,3 +1,4 @@
+@import url(./media.css);
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,6 +9,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu__list {
@@ -39,15 +46,18 @@
 .phone__number {
   font-size: 1.3rem;
   text-decoration: none;
-}
-
-.phone__number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header__phone-number {
+    display: none;
+  }
 }
 
 .phone-number__icon {

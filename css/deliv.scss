@@ -1,3 +1,17 @@
+$tablets: 768px;
+$phones: 480px;
+
+@mixin tablets {
+    @media screen and (max-width: $tablets){
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: $phones){
+        @content;
+    }
+}
 .section__deliv {
     background: url("./../png/bgsec.png") no-repeat;
     background-size: cover;
@@ -5,13 +19,21 @@
     .section__title {
         color: #365A49;
     }
+    
 }
 .form {
     display: flex;
+    @include tablets() {
+        flex-direction: column;
+        padding: 0 1.2rem 0 1.2rem;
+    }
 }
 .form__col {
     flex: 1;
     margin-right: 1.1rem;
+    @include tablets() {
+        margin-right: 0;
+    }
 }
 .form__col:last-child {
     margin-right: 0;
@@ -50,6 +72,9 @@
     margin-bottom: 0.6rem;
     &:last-child {
         margin-bottom: 0;
+    }
+    @include phones() {
+        justify-content: center;
     }
 }
 .radio {
