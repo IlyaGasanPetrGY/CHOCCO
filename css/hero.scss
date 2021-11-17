@@ -78,7 +78,7 @@ $phones: 480px;
         text-align: center;
         &:before {
             content: url("./../png/mobchoc.png");
-            object-fit: 50%;
+            flex: 0.2;
 
         }
         flex: 1;
