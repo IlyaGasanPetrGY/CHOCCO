@@ -142,3 +142,16 @@
 .rewiews__swichers__item--active {
   border: 0.22rem solid #365A49;
 }
+
+.reviews__display-inner {
+  display: none;
+}
+.reviews__display-inner--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.active {
+  border: green 2px solid;
+}

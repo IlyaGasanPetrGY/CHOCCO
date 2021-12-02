@@ -123,3 +123,12 @@ $phones: 480px;
 .rewiews__swichers__item--active {
     border:0.22rem solid #365A49;
 }
+.reviews__display-inner {
+    display: none;
+    &--active {
+        display: flex;
+    }
+}
+.active {
+    border: green 2px solid;
+}

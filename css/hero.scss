@@ -53,6 +53,11 @@ $phones: 480px;
 .container {
     padding-top: 1.4rem;
     padding-bottom: 2.22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    flex-wrap: nowrap;
     
 }
 .container:nth-child(1) {
@@ -78,7 +83,7 @@ $phones: 480px;
         text-align: center;
         &:before {
             content: url("./../png/mobchoc.png");
-            flex: 0.2;
+           
 
         }
         flex: 1;
